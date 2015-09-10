@@ -12,8 +12,8 @@ IF "%command%"=="sync" (
 	call git add _vimrc 
 	call git add vimsync.bat 
 	call git add bundle/*
-	call git commit -m "Updating Vim enviroment"
 	call git status
+	call git commit -m "Updating Vim enviroment"
 	call git push origin master
 ) ELSE IF "%commad%"=="updated" (
 	git pull origin master
