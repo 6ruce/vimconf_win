@@ -1,7 +1,7 @@
 set nocompatible
+source $VIMRUNTIME/../vimfiles/bundle/vim-pathogen/autoload/pathogen.vim
 source $VIMRUNTIME/vimrc_example.vim
-source $VIMRUNTIME/mswin.vim
-behave mswin
+execute pathogen#infect()
 
 set diffexpr=MyDiff()
 function MyDiff()
