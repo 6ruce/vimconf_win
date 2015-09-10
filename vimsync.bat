@@ -2,6 +2,7 @@
 set command=%1
 set curPath=%~dp0
 IF "%command%"=="sync" (
+	call git pull origin master
 	copy "%curPath%_vimrc" "%curPath%../_vimrc" /Y 
 	rmdir "%curPath%..\vimfiles\bundle" /S /Q
 	xcopy "%curPath%\bundle" "%curPath%..\vimfiles\bundle" /S /I
