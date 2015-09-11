@@ -29,3 +29,9 @@ function MyDiff()
 endfunction
 
 set number
+nnoremap yp "*p
+nnoremap gj 0
+nnoremap gk $
+vnoremap gj 0
+vnoremap mm "*y
+vnoremap gk $
