@@ -35,3 +35,4 @@ nnoremap gk $
 vnoremap gj 0
 vnoremap mm "*y
 vnoremap gk $
+colorscheme slate
