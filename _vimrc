@@ -30,9 +30,9 @@ endfunction
 
 set number
 nnoremap yp "*p
-nnoremap gj 0
+nnoremap gj ^
 nnoremap gk $
-vnoremap gj 0
+vnoremap gj ^
 vnoremap mm "*y
 vnoremap gk $
 colorscheme slate
