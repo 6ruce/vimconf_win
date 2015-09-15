@@ -1,6 +1,7 @@
-set nocompatible
+﻿set nocompatible
 source $VIMRUNTIME/../vimfiles/bundle/vim-pathogen/autoload/pathogen.vim
 source $VIMRUNTIME/vimrc_example.vim
+set encoding=utf-8
 execute pathogen#infect()
 
 set diffexpr=MyDiff()
@@ -36,3 +37,14 @@ vnoremap gj ^
 vnoremap mm "*y
 vnoremap gk $
 colorscheme slate
+
+set termencoding=utf8
+set term=xterm
+set t_Co=256
+let &t_AB="\e[48;5;%dm"
+let &t_AF="\e[38;5;%dm"
+
+" Airline
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='zenburn'
